@@ -12,21 +12,20 @@ import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+public class EnterSignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_enter_signup);
+        TextView textview_login = findViewById(R.id.textview_login);
 
-
-        TextView textview_signup = findViewById(R.id.textview_signup);
-
-        SpannableString ss = SpannableString.valueOf(textview_signup.getText().toString());
+        SpannableString ss = SpannableString.valueOf(textview_login.getText().toString());
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View textView) {
-                startActivity(new Intent(LoginActivity.this, EnterSignupActivity.class));
+                startActivity(new Intent(EnterSignupActivity.this, LoginActivity.class));
+                finish();
             }
             @Override
             public void updateDrawState(TextPaint ds) {
@@ -34,9 +33,10 @@ public class LoginActivity extends AppCompatActivity {
                 ds.setUnderlineText(false);
             }
         };
-        ss.setSpan(clickableSpan, ss.length()-6, ss.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        textview_signup.setText(ss);
-        textview_signup.setMovementMethod(LinkMovementMethod.getInstance());
-        textview_signup.setHighlightColor(Color.TRANSPARENT);
+        ss.setSpan(clickableSpan, ss.length()-5, ss.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        textview_login.setText(ss);
+        textview_login.setMovementMethod(LinkMovementMethod.getInstance());
+        textview_login.setHighlightColor(Color.TRANSPARENT);
+
     }
 }

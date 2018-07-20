@@ -4,4 +4,10 @@
     <string name="heading">Find Local Professionals For Pretty Much Anything.</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot">I forgot my password !</string>
+    <string name="signup_text">Don\'t have an account ? Signup</string>
+    <string name="client_signup">Create A Client Account</string>
+    <string name="pro_account">Create A Pro Account</string>
+    <string name="already_member">Are You A Member ? Login</string>
 </resources>

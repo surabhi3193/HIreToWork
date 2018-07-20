@@ -1,40 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:padding="20dp"
-    android:orientation="vertical"
     tools:context=".LoginActivity">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/image"
-        android:src="@drawable/logo_" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_bold"
-        android:text="@string/app_name"
-        android:textSize="@dimen/big_font" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_bold"
         android:gravity="center"
         android:padding="20dp"
-        android:text="@string/heading"
-        android:textSize="@dimen/semi_medium_font" />
+        android:orientation="vertical">
+
+<include layout="@layout/header_logo"/>
 
     <EditText
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/user"
         android:paddingLeft="8dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:id="@+id/edittext_username"
         android:hint="@string/username"
         android:background="@drawable/edittext_bg_border"
@@ -52,7 +38,7 @@
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/password"
         android:paddingLeft="8dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:id="@+id/edittext_password"
         android:hint="@string/password"
         android:background="@drawable/edittext_bg_border"
@@ -65,9 +51,37 @@
         android:singleLine="true"
         android:imeOptions="actionDone"/>
 
+    <Button
+        android:id="@+id/login_btn"
+        android:textSize="@dimen/semi_medium_font"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_btn"/>
 
 
+    <TextView
+        android:id="@+id/textview_forgot"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/forgot"
+        android:textSize="@dimen/small_font" />
 
 
-
-</LinearLayout>
+    <TextView
+        android:id="@+id/textview_signup"
+        android:textColorLink="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/signup_text"
+        android:textSize="@dimen/semi_medium_font" />
+    </LinearLayout>
+</ScrollView>
