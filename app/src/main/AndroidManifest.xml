@@ -22,7 +22,8 @@
         <activity
             android:name=".EnterSignupActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BaseActivity"></activity>
     </application>
 
 </manifest>

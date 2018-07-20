@@ -46,5 +46,5 @@
         android:fontFamily="@font/amiko_bold"
         android:text="@string/already_member"
         android:textSize="@dimen/semi_medium_font" />
-    
+
 </LinearLayout>
