@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HiretoWork</string>
+    <string name="image">image</string>
+    <string name="heading">Find Local Professionals For Pretty Much Anything.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

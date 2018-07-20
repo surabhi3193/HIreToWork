@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/logo_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:text="@string/app_name"
+        android:textSize="@dimen/big_font" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/heading"
+        android:textSize="@dimen/semi_medium_font" />
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/edittext_username"
+        android:hint="@string/username"
+        android:background="@drawable/edittext_bg_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_regular"
+        android:gravity="start"
+        android:textSize="@dimen/semi_medium_font"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/password"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/edittext_password"
+        android:hint="@string/password"
+        android:background="@drawable/edittext_bg_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_regular"
+        android:gravity="start"
+        android:textSize="@dimen/semi_medium_font"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+
+
+
+
+
+</LinearLayout>
