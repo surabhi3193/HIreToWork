@@ -42,6 +42,7 @@
     <color name="green">#008000</color>
     <color name="trans">#00000000</color>
     <color name="dark_trans">#80000000</color>
+    <color name="light_trans">#3FFF</color>
     <color name="black_shade">#333332</color>
     <color name="gray_shade">#f3f3f3</color>
     <color name="green_shade">#21ce99</color>

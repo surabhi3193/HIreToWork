@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activities.main.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,13 +17,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.main.LoginActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".EnterSignupActivity"
+            android:name=".activities.main.EnterSignupActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.client.ClientSignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.ProSignupActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

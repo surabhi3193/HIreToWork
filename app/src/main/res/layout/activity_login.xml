@@ -1,87 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:gravity="center"
-    tools:context=".LoginActivity">
+    tools:context=".activities.main.LoginActivity">
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
-<include layout="@layout/header_logo"/>
+        <include layout="@layout/header_logo" />
 
-    <EditText
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/user"
-        android:paddingLeft="8dp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/edittext_username"
-        android:hint="@string/username"
-        android:background="@drawable/edittext_bg_border"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_regular"
-        android:gravity="start"
-        android:textSize="@dimen/semi_medium_font"
-        android:inputType="text"
-        android:singleLine="true"
-        android:imeOptions="actionNext"/>
-
-    <EditText
-        android:layout_marginTop="20dp"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/password"
-        android:paddingLeft="8dp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/edittext_password"
-        android:hint="@string/password"
-        android:background="@drawable/edittext_bg_border"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_regular"
-        android:gravity="start"
-        android:textSize="@dimen/semi_medium_font"
-        android:inputType="textPassword"
-        android:singleLine="true"
-        android:imeOptions="actionDone"/>
-
-    <Button
-        android:id="@+id/login_btn"
-        android:textSize="@dimen/semi_medium_font"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:fontFamily="@font/amiko_bold"
-        android:text="@string/login"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/blue_btn"/>
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
 
 
-    <TextView
-        android:id="@+id/textview_forgot"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_bold"
-        android:text="@string/forgot"
-        android:textSize="@dimen/small_font" />
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border">
+
+            <EditText
+                android:background="@color/trans"
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/amiko_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/small_font" />
+
+            <ImageView
+                android:src="@drawable/hide"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_btn"
+            android:fontFamily="@font/amiko_bold"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/semi_medium_font" />
 
 
-    <TextView
-        android:id="@+id/textview_signup"
-        android:textColorLink="@color/colorPrimary"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_bold"
-        android:text="@string/signup_text"
-        android:textSize="@dimen/semi_medium_font" />
+        <TextView
+            android:id="@+id/textview_forgot"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="@string/forgot"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font" />
+
+
+        <TextView
+            android:id="@+id/textview_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="@string/signup_text"
+            android:textColor="@color/white"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="@dimen/semi_medium_font" />
     </LinearLayout>
 </ScrollView>

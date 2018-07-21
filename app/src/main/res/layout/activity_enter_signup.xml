@@ -7,8 +7,9 @@
     android:padding="20dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     android:gravity="center"
-    tools:context=".EnterSignupActivity">
+    tools:context=".activities.main.EnterSignupActivity">
 
     <include layout="@layout/header_logo"/>
 
@@ -22,8 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/gray_btn"/>
-
+        android:background="@color/light_trans"/>
 
     <Button
         android:id="@+id/pro_signup_btn"
@@ -35,16 +35,18 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/blue_btn"/>
+        android:background="#90009fd9"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/textview_login"
         android:textColorLink="@color/colorPrimary"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_bold"
-        android:text="@string/already_member"
+        android:fontFamily="@font/amiko_semibold"
+        android:text="@string/already_hint"
         android:textSize="@dimen/semi_medium_font" />
+
 
 </LinearLayout>

@@ -9,5 +9,15 @@
     <string name="signup_text">Don\'t have an account ? Signup</string>
     <string name="client_signup">Create A Client Account</string>
     <string name="pro_account">Create A Pro Account</string>
-    <string name="already_member">Are You A Member ? Login</string>
+
+    <string name="create_a_client_account">Create A Client Account</string>
+    <string name="create_a_pro_account">Create A Pro Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_contact">Contact No.</string>
+    <string name="hint_company">Company</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="hint_terms_condition"><![CDATA[I accept all Terms & Conditions]]></string>
+    <string name="register">Sign-up</string>
+    <string name="already_hint">Already A Member ? Login</string>
 </resources>

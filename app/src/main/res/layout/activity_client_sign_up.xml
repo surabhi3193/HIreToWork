@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    tools:context=".activities.client.ClientSignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <include layout="@layout/header_logo"/>
+
+        <TextView
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/semi_medium_font"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/create_a_client_account"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/full_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edittext_country"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_contact"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edittext_company"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border"
+            android:drawableLeft="@drawable/icon_company"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/amiko_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_company"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg_border">
+
+            <EditText
+                android:background="@color/trans"
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/amiko_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/small_font" />
+
+            <ImageView
+                android:src="@drawable/hide"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bg_border"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edittext_conf_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/trans"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/amiko_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/conf_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/small_font" />
+
+            <ImageView
+                android:id="@+id/conf_show_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/hide" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:gravity="center"
+                android:id="@+id/chTerms"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:button="@drawable/checkbox_selector"
+                android:shadowColor="@color/white"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColorLink="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:id="@+id/textview_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/hint_terms_condition"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_btn"
+            android:fontFamily="@font/amiko_bold"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/semi_medium_font" />
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="@string/already_hint"
+            android:textColor="@color/white"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="@dimen/small_font" />
+    </LinearLayout>
+</ScrollView>
