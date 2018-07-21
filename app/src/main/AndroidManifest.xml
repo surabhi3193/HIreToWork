@@ -33,8 +33,10 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".activities.ProSignupActivity"
+            android:name=".activities.pro.ProSignupActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activities.client.ClientDashBoard" />
+        <activity android:name=".activities.pro.ProDashBoard"></activity>
     </application>
 
 </manifest>

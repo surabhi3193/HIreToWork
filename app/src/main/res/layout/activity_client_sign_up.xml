@@ -217,10 +217,7 @@
                 android:textColor="@color/white"
                 />
 
-
         </LinearLayout>
-
-
         <Button
             android:id="@+id/register_btn"
             android:layout_width="match_parent"

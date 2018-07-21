@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.hiretowork.surabhi.hiretowork.BaseActivity;
 import com.hiretowork.surabhi.hiretowork.R;
-import com.hiretowork.surabhi.hiretowork.activities.ProSignupActivity;
+import com.hiretowork.surabhi.hiretowork.activities.pro.ProSignupActivity;
 import com.hiretowork.surabhi.hiretowork.activities.client.ClientSignUpActivity;
 
 public class EnterSignupActivity extends BaseActivity {
@@ -24,9 +24,22 @@ public class EnterSignupActivity extends BaseActivity {
          client_signup_btn =findViewById(R.id.client_signup_btn);
          pro_signup_btn =findViewById(R.id.pro_signup_btn);
 
-         client_signup_btn.setOnClickListener(v -> didTapButton(client_signup_btn,new Intent(EnterSignupActivity.this,ClientSignUpActivity.class)));
+         client_signup_btn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(EnterSignupActivity.this,ClientSignUpActivity.class)); // Here you go.
 
-         pro_signup_btn.setOnClickListener(v -> didTapButton(pro_signup_btn,new Intent(EnterSignupActivity.this,ProSignupActivity.class)));
+             }
+         }); pro_signup_btn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(EnterSignupActivity.this,ProSignupActivity.class)); // Here you go.
+
+             }
+         });
+
+
+//         pro_signup_btn.setOnClickListener(v -> didTapButton(pro_signup_btn,new Intent(EnterSignupActivity.this,ProSignupActivity.class)));
 
         SpannableString str_textciew = SpannableString.valueOf(textview_login.getText().toString());
 

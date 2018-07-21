@@ -1,4 +1,4 @@
-package com.hiretowork.surabhi.hiretowork.activities;
+package com.hiretowork.surabhi.hiretowork.activities.pro;
 
 import android.os.Bundle;
 import android.text.SpannableString;

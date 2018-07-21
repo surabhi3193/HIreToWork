@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:gravity="center"
-    tools:context=".activities.ProSignupActivity">
+    tools:context=".activities.pro.ProSignupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

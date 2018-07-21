@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.client.ClientDashBoard">
+
+    <include
+        layout="@layout/client_header"/>
+    <LinearLayout
+        android:padding="10dp"
+android:gravity="center_vertical"
+        android:background="@color/blue_trans"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <EditText
+            android:fontFamily="@font/amiko_regular"
+            android:textSize="@dimen/small_font"
+            android:paddingLeft="15dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColorHint="@color/white"
+            android:hint="@string/location"
+            android:background="@drawable/trans_rect"/>
+
+        <TextView
+            android:fontFamily="@font/amiko_regular"
+            android:textSize="@dimen/small_font"
+            android:drawableLeft="@drawable/filter"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/filter"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/trans_rect"/>
+
+    </LinearLayout>
+
+</LinearLayout>
