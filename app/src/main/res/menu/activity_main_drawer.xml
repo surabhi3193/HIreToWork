@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:iconTint="@color/colorAccent"
+            android:id="@+id/home_bar"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/aboutus"
+            android:title="Service Notification" />
+        <item
+            android:id="@+id/contact"
+            android:title="Explore" />
+        <item
+            android:id="@+id/vacancy"
+            android:title="Proposal List" />
+
+        <item
+            android:id="@+id/exams"
+            android:title="Projects" />
+
+        <item
+            android:id="@+id/address"
+            android:title="Messages" />
+
+
+        <item
+            android:id="@+id/share"
+            android:title="New Quote Added" />
+
+        <item
+
+            android:id="@+id/rate"
+            android:title="Service Request Expired" />
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

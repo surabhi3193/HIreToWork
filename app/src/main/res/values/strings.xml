@@ -22,4 +22,13 @@
     <string name="already_hint">Already A Member ? Login</string>
     <string name="location">Location</string>
     <string name="filter">Filter</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="review">Review</string>
+    <string name="submit_confirm_message">submit</string>
+    <string name="submit_confirm_button">submit</string>
+    <string name="finish">finish</string>
+    <string name="next">Next</string>
+    <string name="post">Post</string>
+    <string name="where_do_you_need_the_webdesigner">Where do you need the webdesigner ?</string>
 </resources>

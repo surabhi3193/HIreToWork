@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:background="@drawable/item_shadow_bg"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/where_do_you_need_the_webdesigner"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edittext_loc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_light_x"
+            android:cursorVisible="false"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

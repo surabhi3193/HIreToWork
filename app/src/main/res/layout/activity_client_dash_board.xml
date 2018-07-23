@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.infideap.drawerbehavior.AdvanceDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:background="@drawable/bg"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activities.client.ClientDashBoard">
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:openDrawer="end">
 
     <include
-        layout="@layout/client_header"/>
-    <LinearLayout
-        android:padding="10dp"
-android:gravity="center_vertical"
-        android:background="@color/blue_trans"
+        layout="@layout/app_bar_default"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
-        <EditText
-            android:fontFamily="@font/amiko_regular"
-            android:textSize="@dimen/small_font"
-            android:paddingLeft="15dp"
-            android:layout_weight="3"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:textColorHint="@color/white"
-            android:hint="@string/location"
-            android:background="@drawable/trans_rect"/>
+        android:layout_height="match_parent" />
 
-        <TextView
-            android:fontFamily="@font/amiko_regular"
-            android:textSize="@dimen/small_font"
-            android:drawableLeft="@drawable/filter"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:text="@string/filter"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:background="@drawable/trans_rect"/>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="false"
+        android:scrollbars="none"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/activity_main_drawer"/>
 
-    </LinearLayout>
 
-</LinearLayout>
+</com.infideap.drawerbehavior.AdvanceDrawerLayout>
