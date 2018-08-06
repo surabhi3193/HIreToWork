@@ -6,13 +6,7 @@ import android.support.design.internal.NavigationMenuView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
@@ -20,13 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.hiretowork.surabhi.hiretowork.BaseActivity;
-import com.hiretowork.surabhi.hiretowork.BeanClasses.Developer;
 import com.hiretowork.surabhi.hiretowork.R;
-import com.hiretowork.surabhi.hiretowork.adapter.DeveloperAdapter;
-import com.hiretowork.surabhi.hiretowork.fragments.ClientHomeFragment;
+import com.hiretowork.surabhi.hiretowork.fragments.client.ClientHomeFragment;
 import com.infideap.drawerbehavior.AdvanceDrawerLayout;
-
-import java.util.ArrayList;
 
 public class ClientDashBoard extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -36,8 +26,6 @@ public class ClientDashBoard extends BaseActivity implements NavigationView.OnNa
     Class fragmentClass;
     Intent i;
     boolean doubleBackToExitPressedOnce = false;
-
-
 
 
     private void disableNavigationViewScrollbars(NavigationView navigationView) {

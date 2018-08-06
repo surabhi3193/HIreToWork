@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:text="Surabhi mishra"/>
+            android:text="Rose Wyatt"/>
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/gray"
             android:textSize="@dimen/small_font"
-            android:fontFamily="@font/amiko_regular"
+            android:fontFamily="@font/arima_regular"
             android:maxLines="2"
             android:ellipsize="end"
             android:text="Loren Ipsum is dummy Contetnt"/>
@@ -84,7 +84,8 @@
             android:text="View Profile"
             android:textColor="@color/white"
             android:layout_width="wrap_content"
-            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:layout_height="35dp"
             android:background="@drawable/blue_rect"/>
 

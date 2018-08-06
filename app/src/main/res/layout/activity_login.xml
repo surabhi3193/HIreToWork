@@ -24,7 +24,7 @@
             android:background="@drawable/edittext_bg_border"
             android:drawableLeft="@drawable/user"
             android:drawablePadding="10dp"
-            android:fontFamily="@font/amiko_regular"
+            android:fontFamily="@font/arima_regular"
             android:gravity="center_vertical"
             android:hint="@string/username"
             android:imeOptions="actionNext"
@@ -51,7 +51,7 @@
                 android:layout_height="match_parent"
                 android:drawableLeft="@drawable/password"
                 android:drawablePadding="10dp"
-                android:fontFamily="@font/amiko_regular"
+                android:fontFamily="@font/arima_regular"
                 android:gravity="center_vertical"
                 android:hint="@string/password"
                 android:imeOptions="actionDone"
@@ -78,20 +78,18 @@
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/blue_btn"
-            android:fontFamily="@font/amiko_bold"
+            android:fontFamily="@font/arima_bold"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/semi_medium_font" />
 
-
         <TextView
             android:id="@+id/textview_forgot"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/amiko_semibold"
+            android:fontFamily="@font/arima_semibold"
             android:text="@string/forgot"
             android:textColor="@color/white"
             android:textSize="@dimen/small_font" />
@@ -102,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/amiko_semibold"
+            android:fontFamily="@font/arima_semibold"
             android:text="@string/signup_text"
             android:textColor="@color/white"
             android:textColorLink="@color/colorPrimary"

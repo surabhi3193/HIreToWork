@@ -1,34 +1,32 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.client.PostProjectActivity">
     <include
         layout="@layout/back_toplayout"/>
 
-    <com.hiretowork.surabhi.hiretowork.stepWizard.wizard.ui.StepPagerStrip
-        android:id="@+id/strip"
-        android:layout_marginTop="10dp"
+    <com.grappes.infinixindicator.InfiniXIndicator
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="8dp"
-        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
-        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
-        android:gravity="left" />
+        android:layout_height="22dp"
+        android:id="@+id/infinix_indicator"
+        app:x_background_color="@color/trans"
+        app:x_dot_unselected_color="@color/white"
+        app:x_dot_selected_color="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+    <com.hiretowork.surabhi.hiretowork.other.NonSwipeableViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <View android:id="@+id/divider"
-        android:background="?android:attr/dividerHorizontal"
-        android:layout_height="1dp"
-        android:layout_width="match_parent" />
+        android:layout_weight="2"/>
 
     <LinearLayout
         android:padding="10dp"
@@ -38,6 +36,8 @@
         android:orientation="horizontal">
 
         <Button
+            android:visibility="invisible"
+
             android:textColor="@color/white"
             style="?android:attr/buttonBarButtonStyle"
             android:background="@drawable/gray_btn"
@@ -61,4 +61,5 @@
             android:text="Next" />
 
     </LinearLayout>
+
 </LinearLayout>

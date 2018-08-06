@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/item_shadow_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textview_head_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/page2_head"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_font" />
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:shadowColor="@color/white"
+            android:text="@string/new_website"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            style="@style/TextAppearanceFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arima_regular"
+            android:padding="10dp"
+            android:shadowColor="@color/white"
+            android:text="@string/existing_web"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arima_regular"
+            android:padding="10dp"
+            android:shadowColor="@color/white"
+            android:text="@string/existing_web"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arima_regular"
+            android:padding="10dp"
+            android:shadowColor="@color/white"
+            android:text="@string/existing_web"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arima_regular"
+            android:padding="10dp"
+            android:shadowColor="@color/white"
+            android:text="@string/existing_web"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

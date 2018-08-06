@@ -14,7 +14,7 @@
     <TextView
         android:id="@+id/textview_title"
         android:textStyle="bold"
-        android:fontFamily="@font/amiko_bold"
+        android:fontFamily="@font/arima_bold"
         android:textSize="@dimen/big_font"
         android:layout_marginRight="50dp"
         android:gravity="center"

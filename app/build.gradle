@@ -49,5 +49,8 @@ dependencies {
 
     implementation 'com.github.shrikanth7698:Custom-Navigation-Drawer:v0.0.1'
     implementation 'com.infideap.drawerbehavior:drawer-behavior:0.0.4'
+    implementation 'com.grappes:Infinix-Indicator:1.0.2'
+
+
 
 }

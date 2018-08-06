@@ -23,6 +23,9 @@ allprojects {
         maven{
             url "https://dl.bintray.com/infideap2/Drawer-Behavior"
         }
+        maven {
+            url  "https://dl.bintray.com/dgunjit14/Infinix-Indicator"
+        }
     }
 }
 

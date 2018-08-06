@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.hiretowork.surabhi.hiretowork.BaseActivity;
 import com.hiretowork.surabhi.hiretowork.R;
+import com.hiretowork.surabhi.hiretowork.activities.client.ClientDashBoard;
 
 public class LoginActivity extends BaseActivity {
 
@@ -50,6 +51,8 @@ public class LoginActivity extends BaseActivity {
             }
 
         });
-        login_btn.setOnClickListener(v -> didTapButton(login_btn,new Intent(LoginActivity.this,MainActivity.class)));
+
+
+        login_btn.setOnClickListener(v -> didTapButton(login_btn,new Intent(LoginActivity.this,ClientDashBoard.class)));
     }
 }

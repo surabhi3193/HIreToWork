@@ -27,14 +27,13 @@ public class EnterSignupActivity extends BaseActivity {
          client_signup_btn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 startActivity(new Intent(EnterSignupActivity.this,ClientSignUpActivity.class)); // Here you go.
+                 didTapButton(client_signup_btn,new Intent(EnterSignupActivity.this,ClientSignUpActivity.class));
 
              }
          }); pro_signup_btn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 startActivity(new Intent(EnterSignupActivity.this,ProSignupActivity.class)); // Here you go.
-
+                 didTapButton(pro_signup_btn,new Intent(EnterSignupActivity.this,ProSignupActivity.class));
              }
          });
 

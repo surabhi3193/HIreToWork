@@ -42,6 +42,8 @@
         <activity android:name=".activities.client.ClientDashBoard" />
         <activity android:name=".activities.pro.ProDashBoard" />
         <activity android:name=".activities.client.PostProjectActivity" />
+
+
     </application>
 
 </manifest>

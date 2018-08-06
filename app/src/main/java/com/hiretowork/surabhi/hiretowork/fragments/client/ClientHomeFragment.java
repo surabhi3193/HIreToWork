@@ -1,4 +1,4 @@
-package com.hiretowork.surabhi.hiretowork.fragments;
+package com.hiretowork.surabhi.hiretowork.fragments.client;
 
 import android.content.Intent;
 import android.os.Build;
@@ -42,10 +42,10 @@ public class ClientHomeFragment extends Fragment {
 
 
         ArrayList<Developer> developerdata = new ArrayList<>();
-        Developer developer = new Developer("1", "Surabhi Mishra", R.drawable.geni, "Java, Android,GIt,Html", "Indore, India", "4.0", "Loren Ipsum is dummy content");
-        Developer developer2 = new Developer("2", "Nitin Dwivedi", R.drawable.hrx, "Python,Mongo Db,PHP,HTMl", "Mumbai, India", "4.0", "Loren Ipsum is dummy content");
-        Developer developer3 = new Developer("1", "Surabhi Mishra", R.drawable.geni, "Java, Android,GIt,Html", "Indore, India", "4.0", "Loren Ipsum is dummy content");
-        Developer developer4 = new Developer("2", "Nitin Dwivedi", R.drawable.hrx, "Python,Mongo Db,PHP,HTMl", "Mumbai, India", "4.0", "Loren Ipsum is dummy content");
+        Developer developer = new Developer("1", "Rose Wyatt", R.drawable.geni, "Java, Android,GIt,Html", "Indore, India", "4.0", "Loren Ipsum is dummy content");
+        Developer developer2 = new Developer("2", "George Smith", R.drawable.hrx, "Python,Mongo Db,PHP,HTMl", "Mumbai, India", "4.0", "Loren Ipsum is dummy content");
+        Developer developer3 = new Developer("1", "Rose Wyatt", R.drawable.geni, "Java, Android,GIt,Html", "Indore, India", "4.0", "Loren Ipsum is dummy content");
+        Developer developer4 = new Developer("2", "George Smith", R.drawable.hrx, "Python,Mongo Db,PHP,HTMl", "Mumbai, India", "4.0", "Loren Ipsum is dummy content");
         developerdata.add(developer);
         developerdata.add(developer2);
         developerdata.add(developer3);

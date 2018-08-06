@@ -36,8 +36,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Surabhi Mishra"
+        android:text="Rose Wyatt"
         android:textColor="@color/white"
-        android:fontFamily="@font/amiko_bold"/>
+        android:fontFamily="@font/arima_bold"/>
 
 </LinearLayout>

@@ -31,4 +31,17 @@
     <string name="next">Next</string>
     <string name="post">Post</string>
     <string name="where_do_you_need_the_webdesigner">Where do you need the webdesigner ?</string>
+    <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,</string>
+    <string name="page2_head">What would you like done ?</string>
+    <string name="new_website">New Website</string>
+    <string name="existing_web">Change to my existing website</string>
+    <string name="personal_website">Personal Website</string>
+    <string name="blog_page">Blog</string>
+    <string name="social_website">Social Networking / Community</string>
+    <string name="ecommerse_web">E-Commerce</string>
+    <string name="business_Web">Business or Non-Profit</string>
+    <string name="page4_head">What type of website do you have / would like ?</string>
+    <string name="page5_head">Please select your preferred website program</string>
+    <string name="page6_head">Will you provide the web-designer with the content of your site(Images,written content, etc) ?</string>
+    <string name="page7_head">How would you like to meet with the web-designer ?</string>
 </resources>

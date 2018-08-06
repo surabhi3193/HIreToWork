@@ -18,6 +18,8 @@
         android:padding="15dp">
 
         <TextView
+            android:textSize="@dimen/big_font"
+            android:id="@+id/edit_page_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -25,12 +27,15 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:layout_marginTop="8dp"
+            android:hint="@string/location"
+            android:imeOptions="actionDone"
             android:id="@+id/edittext_loc"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:background="@color/gray_light_x"
             android:cursorVisible="false"
-            android:paddingLeft="10dp"
+            android:padding="8dp"
             android:textColor="@color/black" />
     </LinearLayout>
 

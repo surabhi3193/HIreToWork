@@ -18,7 +18,7 @@
         android:textSize="@dimen/semi_medium_font"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:fontFamily="@font/amiko_bold"
+        android:fontFamily="@font/arima_bold"
         android:text="@string/client_signup"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -30,7 +30,7 @@
         android:textSize="@dimen/semi_medium_font"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:fontFamily="@font/amiko_bold"
+        android:fontFamily="@font/arima_bold"
         android:text="@string/pro_account"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -44,7 +44,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko_semibold"
+        android:fontFamily="@font/arima_semibold"
         android:text="@string/already_hint"
         android:textSize="@dimen/semi_medium_font" />
 
